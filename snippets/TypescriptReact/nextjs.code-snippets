@@ -148,7 +148,7 @@
       "export default ${1:${TM_FILENAME_BASE}};"
     ]
   },
-  
+
   // import next components
   "Nextjs import for Link component": {
     "prefix": "nil",
@@ -187,12 +187,14 @@
     "body": [
       "import { NextApiRequest, NextApiResponse } from 'next';",
       "",
-      "export default (${1:req}:NextApiRequest, ${2:res}:NextApiResponse) => {",
+      "const ${1:${TM_FILENAME_BASE}} (req:NextApiRequest, res:NextApiResponse) => {",
       "",
-      "\t${3:req.statusCode = 200}",
+      "\t// Enter API logic here",
       "",
       "",
-      "}"
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
     ],
     "description": "Next Api Route"
   },
