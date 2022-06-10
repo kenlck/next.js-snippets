@@ -3,7 +3,7 @@
   "Nextjs arrow function export at the end": {
     "prefix": "nafe",
     "body": [
-      "const ${1:${TM_FILENAME_BASE}} = () => {",
+      "const ${1:${TM_FILENAME_BASE}}: React.FC = () => {",
       "\treturn (",
       "\t\t<div>",
       "\t\t\t${2:Enter}",
@@ -185,9 +185,9 @@
   "Nextjs Api route": {
     "prefix": "ntsapi",
     "body": [
-      "import { NextApiRequest, NextApiResponse } from 'next';",
+      "import { NextApiRequest, NextApiResponse, NextApiHandler } from 'next';",
       "",
-      "const ${1:${TM_FILENAME_BASE}} (req:NextApiRequest, res:NextApiResponse) => {",
+      "const ${1:${TM_FILENAME_BASE}}: NextApiHandler = (req:NextApiRequest, res:NextApiResponse) => {",
       "",
       "\t// Enter API logic here",
       "",
