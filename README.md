@@ -14,6 +14,9 @@ Latest snippets for next.js
 - reload vscode
 - snippets will be ready to use
 
+# Package and Install locally
+vsce package
+code --install-extension nextjs-snippets-[version].vsix
 ## Language
 
 - [JavascriptReact](#javascript)
